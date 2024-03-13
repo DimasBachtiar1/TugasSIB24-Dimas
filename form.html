@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="image/UTM.png" alt="logo">
+            <a href="">
+                Universitas Trunojoyo Madura
+            </a>
+        </div>
+        <div class="fitur">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="jsdasar.html">Materi JS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <form action="" method="post">
+                <label for="nama">Nama</label><br>
+                <input type="text" name="nama" id="nama" placeholder="Nama Lengkap"><br>
+                <br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"placeholder="Email Aktif"><br>
+                <br>
+                <label for="no_hp">No HP</label><br>
+                <input type="tel" name="no_hp" id="no_hp"placeholder="No HP aktif"><br>
+                <br>
+                <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                <input type="radio" name="jenis_kelamin" id="laki_laki">
+                <label for="laki_laki">Laki-laki</label><br>
+                <input type="radio" name="jenis_kelamin" id="perempuan">
+                <label for="perempuan">Perempuan</label><br>
+                <br>
+                <label for="prodi">Prodi</label><br>
+                <select name="prodi" id="prodi">
+                    <option value="">Pilih</option>
+                    <option value="teknik_informatika">Teknik Informatika</option>
+                    <option value="sistem_informasi">Sistem Informasi</option>
+                    <option value="agri_bisnis">Agri Bisnis</option>
+                    <option value="hukum">Hukum</option>
+                    <option value="penididikan">Pendidikan</option>
+                    <option value="psikologi">Psikologi</option>
+                </select>
+                <br>
+                <label for="hobi">Hobi</label><br>
+                <input type="checkbox" name="hobi" id="membaca">
+                <label for="membaca">Membaca</label><br>
+                <input type="checkbox" name="hobi" id="menulis">
+                <label for="menulis">Menulis</label><br>
+                <input type="checkbox" name="hobi" id="menyanyi">
+                <label for="menyanyi">Menyanyi</label><br>
+                <input type="checkbox" name="hobi" id="olahraga">
+                <label for="olahraga">Olahraga</label><br>
+                <br>
+                <label for="alamat">Alamat</label><br>
+                <textarea name="alamat" id="alamat" cols="30" rows="3" placeholder="Alamat Lengkap"></textarea><br>
+                <br>
+                <label for="foto_diri"> Foto Diri</label><br>
+                <input type="file">
+                <br>
+                <br>
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
