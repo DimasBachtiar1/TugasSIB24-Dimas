@@ -29,6 +29,7 @@ var slideIndex = 1;
 
 
 
+        
 // Penerapan var let dan const
 var name = "Dimas Bachtiar";
 var umur = 22;
