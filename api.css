@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DCDCDCDC;
+    width: 100%;
+    min-height: 80px;
+    background-color: #f2f2f2fc;
+    padding: 5px 5%;
+}
+nav .logo img{
+    width: 45px;
+
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+
+}
+nav .logo a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav .fitur ul{
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style: none;
+    font-weight: bold;
+
+}
+nav .fitur ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav .fitur ul li a:hover{
+    text-decoration: none;
+    color: rgb(193, 192, 192);
+    font-weight: bold;
+}
+
+/* STYLE UNTUK PRODUCTAPI */
+.container {
+    padding: 142px 50px;
+    background-color: #222831;
+}
+.konten {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-konten, .left-konten {
+    background-color: #EEEEEE;
+    border: 1px solid black;
+    padding: 50px;
+    max-height: 350px;
+    min-height: 350px;
+}
+
+.left-konten {
+    border: 1px solid black;
+    padding: 50px;
+    overflow: scroll;
+}
+
+.edit-data {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px 0px 15px;
+}
+
+form {
+    padding: 15px;
+}
+
+label {
+    font-size: large;
+}
+
+input {
+    width: 98%;
+    margin: 5px 0px 0px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+}
+
+.button-add, .button-update {
+    width: 35%;
+    background-color: #5DAE8B;
+    border: 1px solid #5DAE8B;
+    color: white;
+    align-items: end;
+}
+.button-update {
+    background-color: #3E6D9C;
+}
+
+.error {
+    display: none;
+    width: 100%;
+    margin: 15px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #E72929;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+thead {
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #76ABAE;
+}
+
+td {
+    padding: 5px;
+}
+
+.btn {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    border-radius: 2px;
+    color: white;
+    margin: 0px 15px;
+    padding: 4px 8px;
+}
+.button-edit:hover, 
+.button-delete:hover, 
+.button-add:hover,
+.button-update:hover {
+    color: black;
+}
+
+.button-edit {
+    background-color: #3E6D9C;
+}
+.button-delete {
+    background-color: #E72929;
+}
+
+@media (max-width : 725px) {
+    .konten {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+}
+
+
+/* STYLE UNTUK PRODUCTARRAY */
+h2 {
+    text-align: center;
+    padding: 35px 0px 25px;
+    color: #f2f2f2fc;
+}
+
+.container1 {
+    width: 100%;
+    min-height: 649px;
+    background-color: #222831;
+    box-sizing: border-box;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    margin: 15px 10px;
+}
+
+.card {
+    margin: 15px 10px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #503dcc;
+    color: #f2f2f2fc;
+}
+
+.card h3{
+    padding-bottom: 10px;
+}
+
+@media (max-width : 725px) {
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+}
+@media (max-width : 425px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}

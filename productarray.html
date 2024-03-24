@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tampil Data API</title>
+
+    <!-- G-Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- eksternal css -->
+    <link rel="stylesheet" href="api.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
+
     <nav>
         <div class="logo">
             <img src="image/UTM.png" alt="logo">
@@ -26,24 +31,19 @@
             </ul>
         </div>
     </nav>
+    
+    <div class="container1">
+        <h2> Our Product </h2>
+    
+        <div class="row" id="list-produk">
+    
+        </div>
 
-    <div class="carousel">
-        <div class="slide">
-            <img src="image/3.png" alt="">
-        </div>
-        <div class="slide">
-            <img src="image/1.png" alt="">
-        </div>
-        <div class="slide">
-            <img src="image/2.png" alt="">
-        </div>
-        <div class="navigation">
-            <a class="prev" onclick="plusSlides(-1)" >&#10094</a>
-            <a class="next" onclick="plusSlides(1)" >&#10095</a>
-        </div>
     </div>
 
-    <script src="caraousel.js"></script>
-
+    
+    
+    <!-- eksternal js -->
+    <script src="api.js"></script>
 </body>
 </html>

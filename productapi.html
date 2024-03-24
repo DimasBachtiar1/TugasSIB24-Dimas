@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CRUD API</title>
+
+    <!-- eksternal css -->
+    <link rel="stylesheet" href="api.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="image/UTM.png" alt="logo">
+            <a href="">
+                Universitas Trunojoyo Madura
+            </a>
+        </div>
+        <div class="fitur">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="jsdasar.html">Materi JS</a></li>
+                <li><a href="productapi.html">Product</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="konten">
+            <div class="right-konten">
+                <div class="tambah-data">
+                    <h1> Form Tambah Data Produk </h1>
+                    
+                    <form action="" onsubmit="tambah_data(event)">
+                        <label for="nama_produk"> Nama Produk </label> <br>
+                        <input type="text" name="nama_produk" id="nama_produk" required> <br> <br>
+        
+                        <label for="jumlah"> Jumlah Produk </label> <br>
+                        <input type="number" name="jumlah" id="jumlah" min="0" required> <br> <br>
+                        
+                        <label for="harga"> Harga Produk</label> <br>
+                        <input type="number" name="harga" id="harga" min="0" required> <br> <br>
+                        
+                        <div class="button">
+                            <input type="submit" value="Tambah" class="button-add">
+                        </div>
+                    </form>
+                </div>
+                <div class="edit-data">
+                    <h1> Form Edit Data Produk </h1>
+                    
+                    <form action="" onsubmit="update_data(event)">
+    
+                        <input type="hidden" id="id_produk">
+    
+                        <label for="nama_produk"> Nama Produk </label> <br>
+                        <input type="text" name="nama_produk" id="edit_nama_produk" required> <br> <br>
+        
+                        <label for="jumlah"> Jumlah Produk </label> <br>
+                        <input type="number" name="jumlah" id="edit_jumlah" min="0" required> <br> <br>
+                        
+                        <label for="harga"> Harga Produk</label> <br>
+                        <input type="number" name="harga" id="edit_harga" min="0" required> <br> <br>
+                        
+                        <div class="button">
+                            <input type="submit" value="update" class="button-update">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="left-konten">
+    
+                <h1> Data Produk </h1>
+    
+                <div class="error"></div>
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <td> Nama Produk </td>
+                            <td> Jumlah </td>
+                            <td> Harga </td>
+                            <td> Action </td>
+                        </tr>
+                    </thead>
+                    <tbody id="data_produk">
+    
+                    </tbody>
+                </table>
+    
+            </div>
+        </div>
+    </div>
+    
+    <!-- eksternal js -->
+    <script src="api.js"></script>
+</body>
+</html>

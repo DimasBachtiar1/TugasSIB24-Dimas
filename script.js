@@ -1,35 +1,3 @@
-// Carousel
-
-var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName('slide');
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-            slides[slideIndex - 1].style.display = 'block';
-        }
-
-        
-        setInterval(function () {
-            plusSlides(-1);
-        }, 10000); 
-
-
-
-        
 // Penerapan var let dan const
 var name = "Dimas Bachtiar";
 var umur = 22;
@@ -40,14 +8,13 @@ let lulus = false;
 const ukt = 3000000;
 const univ = "Universitas Trunojoyo Madura"
 
-document.getElementById("studentInfo").innerText = `
-Nama : ${name}
-Umur : ${umur}
-Status Mahasiswa : ${status ? 'Aktif' : 'Cuti'}
-Status Kelulusan : ${lulus ? 'Lulus' : 'Belum Lulus'}
-UKT : Rp ${ukt}
-Universitas : ${univ}
-`;
+document.getElementById("studentInfo").innerHTML = 
+`<p>Nama : ${name}</p>
+<p>Umur : ${umur}</p>
+<p>Status Mahasiswa : ${status ? 'Aktif' : 'Cuti'}</p>
+<p>Status Kelulusan : ${lulus ? 'Lulus' : 'Belum Lulus'}</p>
+<p>UKT : Rp ${ukt}</p>
+<p>Universitas : ${univ}</p>`;
 
 
 // Penerapan Tipe Data

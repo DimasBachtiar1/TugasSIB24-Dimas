@@ -13,9 +13,9 @@ nav{
     align-items: center;
     border-bottom: 1px solid #DCDCDCDC;
     width: 100%;
-    min-height: 60px;
+    min-height: 80px;
     background-color: #f2f2f2fc;
-    padding: 5px 5%;
+    padding: 10px 5%;
 }
 nav .logo img{
     width: 45px;
@@ -36,7 +36,7 @@ nav .logo a{
 nav .fitur ul{
     display: flex;
     justify-content: space-between;
-    min-width: 250px;
+    min-width: 300px;
     list-style: none;
     font-weight: bold;
 
