@@ -1,3 +1,12 @@
+// // navbar
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav .fitur ul');
+
+menuToggle.addEventListener('click', function () {
+    nav.classList.toggle('slide');
+
+})
+
 // Penerapan var let dan const
 var name = "Dimas Bachtiar";
 var umur = 22;

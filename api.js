@@ -1,4 +1,13 @@
-let endpoint = 'https://crudcrud.com/api/9819ac55d8144d10b248230f898fa0ec/product';
+// // navbar
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav .fitur ul');
+
+menuToggle.addEventListener('click', function () {
+    nav.classList.toggle('slide');
+
+})
+
+let endpoint = 'https://crudcrud.com/api/3e8b99f0177c456dacc3e5e9c2d171b1/product';
 
 // menampilkan data di tabel
 fetch(endpoint)

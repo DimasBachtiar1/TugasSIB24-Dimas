@@ -26,3 +26,12 @@ var slideIndex = 1;
         setInterval(function () {
             plusSlides(-1);
         }, 10000); 
+
+// // navbar
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav .fitur ul');
+
+menuToggle.addEventListener('click', function () {
+    nav.classList.toggle('slide');
+
+})
